@@ -37,7 +37,7 @@
         pg_volumes:
           - '/etc/localtime:/etc/localtime:ro'
           - '/mnt/tcrypt/appdata/nextcloud/data:/data'
-          - '/mnt/tcrypt/appdata/nextcloud/conf:/config'
+          - '/opt/appdata/{{pgrole}}/conf:/config'
           - '{{path.stdout}}:{{path.stdout}}'
           - '/mnt:/mnt'
 
